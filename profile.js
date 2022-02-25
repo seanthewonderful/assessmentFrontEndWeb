@@ -1,10 +1,10 @@
-function getComp(evt) {
-	evt.preventDefault()
-	alert("You're doing great   -Sean")
-}
-let reassurance = document.querySelector("#thumb")
+// function getComp(evt) {
+// 	evt.preventDefault()
+// 	alert("You're doing great   -Sean")
+// }
+// let reassurance = document.querySelector("#thumb")
 
-reassurance.addEventListener("click", getComp)
+// reassurance.addEventListener("click", getComp)
 
 function myFavColor(evt) {
 	evt.preventDefault()
@@ -29,3 +29,11 @@ function myFavRitual(evt) {
 let favRitual = document.querySelector("#ritual")
 
 favRitual.addEventListener("click", myFavRitual)
+
+function writeIn(evt) {
+    evt.preventDefault()
+    alert("Already in Sean's possession. Choose something more rare in nature.")
+}
+let writeInSub = document.querySelector("#writeIn")
+
+writeInSub.addEventListener("submit", writeIn)
